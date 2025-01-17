@@ -5,24 +5,20 @@
   (add-to-list 'load-path "<path where use-package is installed>")
   (require 'use-package))
 
-(add-hook 'prog-mode-hook 'display-line-numbers-mode)
-(use-package adwaita-dark-theme
-  :ensure t
-  :config
-  (load-theme 'adwaita-dark t)
-  (adwaita-dark-theme-arrow-fringe-bmp-enable))
+;; (add-hook 'prog-mode-hook 'display-line-numbers-mode)
+;; (use-package adwaita-dark-theme
+  ;; :ensure t
+  ;; :config
+  ;; (load-theme 'adwaita-dark t)
+  ;; (adwaita-dark-theme-arrow-fringe-bmp-enable))
 
 (use-package doom-modeline
   :ensure t
   :init (doom-modeline-mode 1)
   (setq doom-modeline-height 30))
 
-(use-package centaur-tabs
-  :demand
-  :config
-  (centaur-tabs-mode t))
-
 (use-package magit)
+(load-theme 'leuven t)
 
 (use-package enlight
   :init
