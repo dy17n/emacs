@@ -6,7 +6,6 @@
   (require 'use-package))
 
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
-
 (use-package adwaita-dark-theme
   :ensure t
   :config
@@ -38,5 +37,4 @@
    '("a68ec832444ed19b83703c829e60222c9cfad7186b7aea5fd794b79be54146e6" default))
  '(package-selected-packages
    '(enlight magit centaur-tabs vim-tab-bar mood-line modus-themes doom-modeline adwaita-dark-theme)))
-(custom-set-faces
- )
+(custom-set-faces)
