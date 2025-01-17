@@ -6,6 +6,13 @@
   (require 'use-package))
 
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
+(use-package vim-tab-bar
+  :ensure t
+  :commands vim-tab-bar-mode
+  :hook
+  (after-init . vim-tab-bar-mode))
+
+
 (use-package adwaita-dark-theme
   :ensure t
   :config
