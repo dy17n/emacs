@@ -12,11 +12,13 @@
   :hook
   (after-init . vim-tab-bar-mode))
 
+(use-package dired-sidebar
+  :ensure t)
+
 (use-package neotree
   :ensure t
   :config
   (global-set-key [f8] 'neotree))
-  
 
 (use-package adwaita-dark-theme
   :ensure t
@@ -46,17 +48,11 @@
 (tool-bar-mode -1)
 (set-frame-font "Terminus 12" nil t)
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    '("a68ec832444ed19b83703c829e60222c9cfad7186b7aea5fd794b79be54146e6" default))
- '(package-selected-packages
-   '(sr-speedbar company enlight magit centaur-tabs vim-tab-bar mood-line modus-themes doom-modeline adwaita-dark-theme)))
-(custom-set-faces
+ '(custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ ))
